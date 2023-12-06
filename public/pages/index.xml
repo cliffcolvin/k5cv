@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on K5CV | Cliff</title>
+    <link>https://example.org/pages/</link>
+    <description>Recent content in Pages on K5CV | Cliff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://example.org/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/pages/about/</guid>
+      
+      <description>K5CV | Cliff Colvin | Lubbock, TX DM93bm | Pota Active LICW# 798, USTNET# 458, OMISS# 12798, SKCC# 22975
+Ham Radio I originally received my technician no-code license in 1999 as KD5IYZ. At that time I was able to pass my General and Amateur Advanced written exams, and failed to pass my morse code exam. I learned as an adult that I had some fairly significant hearing loss, especially in higher frequencies and the exam tapes I had caused massive ringing in my ears 😔.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
