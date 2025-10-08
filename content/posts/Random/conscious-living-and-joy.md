@@ -20,7 +20,7 @@ In either situation, finding joy in life is possible if you make the conscious d
 
 ## Making It a Great Day
 
-I've said for years, "It will be a great day if you make it a great day." This statement is a mentality, and it doesn't stop bad things from happening or plans from going awry. What it does say, though, is that if I accept the feelings that come from those situations—anger, sadness, joy, creative spark, whatever—I can welcome that feeling and embrace it, good, bad, or otherwise. Feel it all the way to completion and release it, thereby giving myself back the joy in my day.
+I've said for years, "It will be a great day if you make it a great day." This statement is a mentality, and it doesn't stop bad things from happening or plans from going awry. What it does say, though, is that if I accept the feelings that come from those situations (anger, sadness, joy, creative spark, whatever) I can welcome that feeling and embrace it, good, bad, or otherwise. Feel it all the way to completion and release it, thereby giving myself back the joy in my day.
 
 ## The Journey
 
