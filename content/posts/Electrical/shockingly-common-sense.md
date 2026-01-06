@@ -4,36 +4,45 @@ date = 2026-01-05
 draft = false
 +++
 
-When I was attending Texas Tech I worked at a particular orange big box home improvement store in the electrical department. There were two horror stories that I remember from this time. The first was the guy that needed an extension cord with two male ends. The second was the guy that kept burning up light switches by connecting the black and the white wire to each side.
+When I was attending Texas Tech I worked at a particular orange big box home improvement store in the electrical department. There were two horror stories that I remember from this time: the first was the guy that needed an extension cord with two male ends; the second was the guy that kept burning up light switches by connecting the black and the white wire to each side.
 
-I think the craziest part here is these ideas were just innate in me to never do. I think it has something to do with genetics, as my grandfather and uncle were both master electricians. However, apparently that wasn't a priori knowledge, and this fact scared me to death.
+The craziest part here is these ideas were just innate in me to never do, maybe it has something to do with genetics. My grandfather and uncle were both master electricians. Regardless of why I was beside myself when these two presented their problems to me.
 
 So why are these things dangerous?
 
 The danger in plain English: If you have two male ends on an extension cord and one is plugged in to the wall, what we would call the voltage source, the other end is electrified. It is just looking for something, possibly you, to close the circuit. The same is true for wiring up the switch with the black and white wires, when you flip the switch you close the circuit. Cue electrocution or fire.
 
-The first principles here are that current flows from higher potential energy to lower potential energy, and the circuit must be closed between the two voltage potentials for energy to flow. The figure below shows a closed circuit with a source, the battery, and a load, the light bulb.
+If we take first principles thinking I'd present:
+1. Conventional current flows from higher potential energy to lower potential energy.
+2. A circuit must be closed between the two voltage potentials for current to flow.
+
+The figure below shows a closed circuit with a battery (voltage source), a light bulb (load), and a switch that is turned on (closed).
 
 ![Closed circuit diagram showing a light switch and circuit with higher and lower potential energy](/circuit.jpg)
 
-Energy flows from the higher potential, positive side, to the lower potential, negative side of the battery. When the energy flows we have the "push" also known as voltage, the resistance of the light bulb, the resistance of the switch, and the current or flow of energy happening. When the switch is closed it looks like 0 resistance so doesn't impede the flow of electricity allowing the only resistance to be the light bulb. In this case lets say you've put a 60 W light bulb and your source is 120 V. This allows us to use Ohm's law to find out that there is .5 Ampere of electricity flowing through this circuit from the positive side to the negative side.
+Current flows from the higher potential (positive side) to the lower potential (negative side) of the battery. In the diagram we can denote:
+- The battery supplying the "push"(voltage)
+- The resistance of the light bulb
+- The resistance of the switch
 
-For purposes of the example lets assume this is really a 120 V DC battery and not your home power. DC means direct current, where as your home uses AC or alternating current. Future us can discuss the intricacies of AC electricity, and it matters very much, but the math gets harder faster so lets stick with simple for these first conversations.
+If you turn the switch on (close the circuit), that switch looks schematically like a 0 ohm resistor. This allows current to flow to the light bulb. We can fill in with Ohm's law what is happening. If its a 60 W light bulb, and your battery is 120 V you have .5 A of current flowing through the circuit.
 
-So back to our example, the 60 W light bulb, and the switch are both completing the circuit and the 60 W light bulb, its power rating, is using that power to generate light. As an incandescent bulb it happens by heating the tungsten element inside so hot that it glows brightly. Other bulbs like LED's use light emitting diodes to emit light. They do generate heat, but its different and since the heat to light ratio is so dramatically different they are deemed more efficient at converting power to light.
+If you then turn the switch off (open the circuit), that switch looks schematically like a near infinite ohm resistor. Since there is not enough voltage to push through that resistance current cannot flow. Power will not be emitted as light.
 
-Lets talk about that switch for a moment when you turn it off, or open the circuit you're basically creating a near infinite resistance. Since there is not enough voltage to push through that resistance energy can't flow. Power isn't emitted as light, and current isn't flowing from positive to negative.
+Go back to those horror stories; the guy with the burned up light switches was basically connecting the battery positive and battery negative to the light switch, and then turning it on.
 
-When you, like my friend at the store, connect the white and black wire to the light switch, there is no light bulb present to consume energy in the circuit anymore from the voltage source's perspective because by connecting the hot (black) and neutral (white) directly to the switch, you've created a path for electricity that has no 'work' to do. Without a bulb to slow it down, the electricity rushes through at maximum velocity, turning the wire itself into a heating element. Remember power is V (voltage) times I (current) so if current is almost infinity because resistance is almost 0 then power is really really high! (Ohm's Law: P=V^2/R) This means the amount of heat generated on the wire in your house is far exceeding its safety limit, and I hope you had a breaker in the circuit or you just lost your house. In the other example from the different friend at the store he wanted to make a two male sided extension cord to fix his backwards Christmas lights situation where he ran all the lights and ended up with a gap, and two female ends and really, really didn't want to have to rerun the lights, or use two extension cords. Once you plug in the cord to the wall that wire is just an open switch and if you pick up the cord to plug it in, and potentially touch the metal you become the light bulb, and also near 0 resistance but instead of heating up the wire, it heats up you.
+If the white and black wire are connected to the light switch instead of breaking a single side of the circuit there is no light bulb present to consume energy anymore from the voltage source's perspective. Without a bulb to slow it down, the electricity rushes through at maximum velocity, turning the wire itself into a heating element. Remember power is V (voltage) times I (current) so if current is almost infinity because resistance is almost 0 then power is really high!
+
+![Switch miswired with hot and neutral](/switchmiswire.png)
+
+In the other example from the store he wanted to make a two male sided extension cord. Once you plug in the cord to the wall that wire is just an open switch and if you pick up the cord to plug it in, and potentially touch the metal you become the light bulb, and also near 0 resistance but instead of heating up the wire, it heats up you.
 
 ![Electrocution danger from double male extension cord](/zap.png)
 
-Since we've jumped to the house wire now just know when talking alternating current it takes roughly 1/14 of an amp to stop the human heart.
+In house wiring (AC) it takes about 1/14 of an amp to stop the human heart.
 
-So you can see now why both of these ideas are bad. Fire, death, sparks, etc are all possibly horrible ends to an uninformed attempt at fixing a real world problem at home. This is why people are often afraid of electricity.
+So you can see now why both of these ideas are bad. Fire, death, sparks, etc. are all possibly horrible ends to an uninformed attempt at fixing a real world problem at home. This is why people are often afraid of electricity.
 
-I want to present one more cool thing in these first principles of this article. The two sided extension cord, or the switch both have an "air gap". I said that it was near infinite resistance, but not actual infinite resistance. I'm pretty sure its not possible to get infinity resistance as all materials have some connection there, but I'll let the chemical engineers jump in with answers to those questions. So when I said there wasn't enough voltage or push to flow energy across the gap if it is not infinite resistance it means there is an amount of energy that can push through the gap then yes? Anyone that has ever shocked their partner when walking through the living room wearing socks, driven an internal combustion engine vehicle have experienced the answer as a resounding yes. The estimated golden rule for dry air at sea level to arc is 3,000 V per mm. This is very much altered with humidity, electrode shape and air pressure (why altitude matters). This doesn't mean your light switch is a ticking time bomb, the 2 mm gap in a standard switch is rated to air-gap roughly 6,000 V, far more than your home's 120 V. You're safe unless you're living inside a literal lightning storm. This will tee us up for the next conversation where we talk about capacitance, and alternating current!
-
-Until then, be safe, and don't wire your voltage source to itself with no load in between causing uncontrolled power discharge.
+These two principles, current flowing from higher potential energy to lower potential energy, and requiring a closed circuit are key steps in understanding how electricity works. I hope it helped shed light on a few things. Until next time be safe, and don't wire your voltage source to itself with no load in between causing uncontrolled power discharge.
 
 P.S. What is it with Christmas stuff that causes people to take on electrical problems and potentially bring grave harm to themselves and, or their houses? Thanksgiving is all about grease fires, Christmas is about electrical fires. Sometimes I think that it is a damned miracle we've survived as a species for as long as we have. Remember from above 0.07 A of current will kill you, the breaker saves your house, not you.
