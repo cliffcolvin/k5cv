@@ -4,20 +4,29 @@ date = 2026-01-06
 draft = false
 +++
 
-2026 is upon us, and while I haven't spent a lot of time writing, I have accomplished a lot in 2025, and some losses/hard-times too. The big shift was moving to Liberty Hill a suburb north west of Austin, TX. We got an awesome home on 1 acre outside of town, and have loved being here so far! Obviously that is a huge shift as we moved away from our family, and Jaelynn my 15 year-old daughter is about 8 hours away from me. We're adapting though, and will probably have some serious airline miles by the time she graduates.
+2026 is officially here. While I didn't spend as much time writing last year as I'd hoped, 2025 was defined by massive accomplishments, a few hard-hitting losses, and a major change of scenery.
 
-- Lost ~94 lbs, around 20% body fat, went down 6 pant sizes and 4 shirt sizes.
-- Made massive growth and progress at work. Kept my entire Kubecost team in tact after acquisition by IBM.
-- I'd like to say I met my financial goals for 2025, but truly I am now broke! I bought my daughter Jaelynn a car after she got her license, bought a new house near Austin, in the middle of selling my pickup and fifth-wheel travel trailer but bought a Tesla for myself to commute!
-- Huge personal wins in mental health. I've made significant investments in my consciousness and living in my zone of genius.
-- Mom's Alzheimer's is pretty bad, and at this point she usually doesn't remember if we even talked on the phone yesterday.
-- My dog Rascal died from lymphoma late last year. This really was a shock to us and happened very quickly without much time to respond.
-- We adopted Kahlua Dec 29, and she's much like Rascal a real asshole! But I love her, she's going to be great once we get her and Jasper operating well together.
-- Walked 696.32 miles in 2025. While this isn't as far as I wanted, it is a massive improvement on basically any other year in my life. Daily dedicated time to walk at least some distance has never been a focus.
+The biggest shift was our move to Liberty Hill, a suburb northwest of Austin. We found an incredible home on an acre of land outside of town and have been loving the space. The move came with the challenge of being further from family; my 15-year-old daughter, Jaelynn, is now eight hours away. We're adapting, though, and I expect we'll have racked up some serious airline miles by the time she graduates.
 
-While we didn't do a ton of travel this year Taryn went with me for a work trip to Miami Beach, and we went to Pigeon Forge, TN for spring break with Jaelynn. We did however make many trips back to West TX to hang out with Jaelynn, and wrap up selling our house there.
+## 2025 Highlights & Hurdles
 
-All-in-all I'm pretty stoked to see what 2026 will bring. I'm still working on my focus and goals this year. I know most folks have all this worked out prior to January 1, but I've been head down on executing some other big goals in the last month of December and first bit of January such that I didn't get too caught up in the pomp and circumstance of building a goal list exactly on the first day.
+**Physical Transformation:** I lost roughly 94 lbs (dropping 20% body fat) and went down six pant sizes and four shirt sizes.
+
+**Career Growth:** I made significant strides at work, successfully keeping my entire Kubecost team intact following our acquisition by IBM.
+
+**Financial Realities:** I'd love to say I hit my savings goals, but the truth is I'm "broke" in the best way possible! Between buying Jaelynn her first car, purchasing our new home, and picking up a Tesla for the commute, it's been a year of big investments.
+
+**Mental Health:** I've made significant investments in my consciousness and learning to live in my "zone of genius."
+
+**Family & Loss:** It's been a tough year on the home front. My mom's Alzheimer's has progressed to the point where she rarely remembers our conversations from the day before. We also lost our dog, Rascal, to lymphoma—it happened so fast it left us in shock.
+
+**New Beginnings:** We adopted Kahlua on December 29th. Much like Rascal, she's a total handful (read: "asshole"), but I love her. She'll be a great addition once she and Jasper learn to coexist.
+
+**Movement:** I walked 696.32 miles. While it wasn't my original goal, it's a massive improvement over any other year of my life. Building the daily habit of dedicated walking has been a game-changer.
+
+We didn't travel extensively, but Taryn joined me for a work trip to Miami Beach, and we took Jaelynn to Pigeon Forge for spring break. Most of our miles were spent driving back to West Texas to visit Jaelynn and wrap up the sale of our old house.
+
+I'm stoked to see what 2026 brings. I'm still refining my goals for the year; I know many people have it all figured out by January 1st, but I've been so focused on executing big projects through December that I haven't quite finished the "pomp and circumstance" of the New Year's list.
 
 For some cute pics!
 
