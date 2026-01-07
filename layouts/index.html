@@ -19,9 +19,15 @@
         {{ partial "bio" . }}
         <main aria-label="Content">
             <style>
+                /* Override theme's narrow wrapper for homepage */
+                .wrapper {
+                    max-width: 90vw;
+                    width: 100%;
+                    padding: 0 2rem;
+                }
                 .categories-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                     gap: 2rem;
                     margin-bottom: 2rem;
                 }
@@ -41,6 +47,9 @@
                     font-size: 0.9em;
                 }
                 @media (max-width: 768px) {
+                    .wrapper {
+                        padding: 0 1rem;
+                    }
                     .categories-grid {
                         grid-template-columns: 1fr;
                     }
