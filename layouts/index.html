@@ -18,6 +18,35 @@
     <div class="wrapper">
         {{ partial "bio" . }}
         <main aria-label="Content">
+            <style>
+                .categories-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin-bottom: 2rem;
+                }
+                .category-section {
+                    min-width: 0;
+                }
+                .category-section .post-item {
+                    margin-bottom: 0.5rem;
+                }
+                .category-section .posts-item-note {
+                    margin-bottom: 1rem;
+                    border-bottom: 1px solid var(--border);
+                    padding-bottom: 0.5rem;
+                }
+                .more-posts-link {
+                    margin-top: 0.5rem;
+                    font-size: 0.9em;
+                }
+                @media (max-width: 768px) {
+                    .categories-grid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+            <div class="categories-grid">
             {{/* Loop through each category under posts */}}
             {{ $postsSection := .Site.GetPage "section" "posts" }}
             {{ range $postsSection.Sections }}
@@ -27,17 +56,18 @@
                     <h3 class="posts-item-note">
                         <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">{{ .Title }}</a>
                     </h3>
-                    {{ range first 3 $categoryPosts }}
+                    {{ range first 10 $categoryPosts }}
                     {{ partial "postCard" . }}
                     {{ end }}
-                    {{ if gt (len $categoryPosts) 3 }}
-                    <p>
-                        <a href="{{ .Permalink }}">See all {{ .Title }} posts →</a>
+                    {{ if gt (len $categoryPosts) 10 }}
+                    <p class="more-posts-link">
+                        <a href="{{ .Permalink }}">More {{ .Title }} posts →</a>
                     </p>
                     {{ end }}
                 </section>
                 {{ end }}
             {{ end }}
+            </div>
             <br/>
             <iframe style="background-color: white;" align="top" frameborder="0" height="230" width="640" scrolling="no" src="https://ky4qx.com/pota_summary/k5cv"></iframe>
             <br/><br/>
