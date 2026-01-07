@@ -18,19 +18,25 @@
     <div class="wrapper">
         {{ partial "bio" . }}
         <main aria-label="Content">
-            <h3 class="posts-item-note" aria-label="Recent Posts">{{ T "home.recent_posts" }}</h3>
-            {{/* Show last 5 posts in reverse date order */}}
-            {{ $pagesToShow := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
-            {{ $posts := $pagesToShow.ByDate.Reverse }}
-            {{ range first 5 $posts }}
-            {{ partial "postCard" . }}
-            {{ end }}
-            {{ if gt (len $posts) 5 }}
-            <p>
-                {{ range $firstSection := (where .Site.Sections "Section" "in" (first 1 (.Site.Params.mainSections))) }}
-                <a href="{{ $firstSection.Permalink }}">{{ T "home.see_all_posts" }}</a>
+            {{/* Loop through each category under posts */}}
+            {{ $postsSection := .Site.GetPage "section" "posts" }}
+            {{ range $postsSection.Sections }}
+                {{ $categoryPosts := .RegularPages.ByDate.Reverse }}
+                {{ if gt (len $categoryPosts) 0 }}
+                <section class="category-section">
+                    <h3 class="posts-item-note">
+                        <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">{{ .Title }}</a>
+                    </h3>
+                    {{ range first 3 $categoryPosts }}
+                    {{ partial "postCard" . }}
+                    {{ end }}
+                    {{ if gt (len $categoryPosts) 3 }}
+                    <p>
+                        <a href="{{ .Permalink }}">See all {{ .Title }} posts →</a>
+                    </p>
+                    {{ end }}
+                </section>
                 {{ end }}
-            </p>
             {{ end }}
             <br/>
             <iframe style="background-color: white;" align="top" frameborder="0" height="230" width="640" scrolling="no" src="https://ky4qx.com/pota_summary/k5cv"></iframe>
