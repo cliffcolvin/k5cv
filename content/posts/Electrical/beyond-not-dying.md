@@ -4,9 +4,9 @@ date = 2026-01-07
 draft = false
 +++
 
-In my last post I told you that current flows from higher potential to lower potential energy source (voltage, think positive and negative post in the battery). The statement of conventional current flowing this way is true, and yet to really start to understand what is even happening we need to talk about electron flow now. I know that my stories of death, house fires and holiday catastrophe are way more interesting. However, you really only need to know that stuff not to die. To really live (in the world of electronics) we turn to physics.
+Current flows from high potential to low potential (think: positive to negative on a battery). The statement of conventional current flowing this way is true, and yet to really start to understand what is even happening we need to talk about electron flow now. I know that my stories of death, house fires and holiday catastrophe are way more interesting. However, you really only need to know that stuff not to die. To really live (in the world of electronics) we turn to physics.
 
-Lets just establish that the electrons move from negative to positive (because opposites attract). I made it to the third article before I brought up a boring theorem or law. I suppose I brought up Ohm's law, but that isn't that bad as the name sounds cool. The next principles we need to learn about electricity are the fundamentals in how you design a circuit.
+Let us just establish that the electrons move from negative to positive (because opposites attract). I made it to the third article before I brought up a boring theorem or law. I suppose I brought up Ohm's law, but that isn't that bad as the name sounds cool. The next principles we need to learn about electricity are the fundamentals of circuit design.
 
 **Kirchhoff's Current Law** - *The algebraic sum of currents in a network of conductors meeting at a point is zero.*
 
@@ -60,4 +60,4 @@ If you ever get confused, just ask: **"What is the constraint?"**
 
 - **Parallel:** The Geometry is the constraint → **Voltage** stays the same, **Current** splits.
 
-In the next article I'll start talking about more complex pieces of electronics, and we'll talk about alternating current (AC) vs direct current (DC) and how it impacts these new components. Until then dwell in the essence of some new found physics in how it relates to electricity!
+In the next article I'll start talking about more complex pieces of electronics, and we'll talk about alternating current (AC) vs direct current (DC) and how it impacts these new components. Before the next post, look at a circuit and ask yourself: Is this a highway (Series) or a ski slope (Parallel)? Once you spot the constraint, the rest is just math.
