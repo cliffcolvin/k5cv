@@ -21,7 +21,7 @@
             <style>
                 /* Override theme's narrow wrapper for homepage */
                 .wrapper {
-                    max-width: 90vw !important;
+                    max-width: 1400px !important;
                     width: 100% !important;
                     margin-left: auto !important;
                     margin-right: auto !important;
@@ -29,9 +29,10 @@
                 }
                 .categories-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                     gap: 2rem;
                     margin-bottom: 2rem;
+                    justify-items: stretch;
                 }
                 .category-section {
                     min-width: 0;
@@ -48,12 +49,34 @@
                     margin-top: 0.5rem;
                     font-size: 0.9em;
                 }
+                /* Center and make iframes responsive */
+                .iframe-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    margin-top: 3rem;
+                }
+                .iframe-container iframe {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                }
                 @media (max-width: 768px) {
                     .wrapper {
-                        padding: 0 1rem;
+                        padding: 0 1rem !important;
                     }
                     .categories-grid {
                         grid-template-columns: 1fr;
+                    }
+                    .iframe-container iframe {
+                        width: 100%;
+                    }
+                }
+                @media (min-width: 769px) and (max-width: 1200px) {
+                    .wrapper {
+                        max-width: 95% !important;
                     }
                 }
             </style>
@@ -79,10 +102,10 @@
                 {{ end }}
             {{ end }}
             </div>
-            <br/>
-            <iframe style="background-color: white;" align="top" frameborder="0" height="230" width="640" scrolling="no" src="https://ky4qx.com/pota_summary/k5cv"></iframe>
-            <br/><br/>
-            <iframe style="background-color: white;" align="top" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/K5CV/" width="640"></iframe>
+            <div class="iframe-container">
+                <iframe style="background-color: white;" frameborder="0" height="230" width="640" scrolling="no" src="https://ky4qx.com/pota_summary/k5cv"></iframe>
+                <iframe style="background-color: white;" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/K5CV/" width="640"></iframe>
+            </div>
         </main>
     </div>
     {{- partial "footer.html" . -}}
