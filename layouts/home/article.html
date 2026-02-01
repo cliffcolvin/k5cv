@@ -1,0 +1,36 @@
+
+<article class="home">
+  <header class="headline">
+    {{- partial "content-header.html" . }}
+  </header>
+{{ partial "heading-pre.html" . }}{{ partial "heading.html" . }}{{ partial "heading-post.html" . }}
+
+{{ partial "article-content.html" . }}
+
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $posts = $posts.ByDate.Reverse }}
+  {{ if $posts }}
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Title</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $posts }}
+      <tr>
+        <td>{{ .Parent.Title }}</td>
+        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td>{{ .Date.Format "Jan 2, 2006" }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+  {{ end }}
+
+  <footer class="footline">
+    {{- partial "content-footer.html" . }}
+  </footer>
+</article>

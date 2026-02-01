@@ -13,7 +13,7 @@ enableEmoji = true
   # Relearn theme params
   author.name = "Cliff Colvin"
   description = "Cliff Colvin | K5CV"
-  themeVariant = ["auto", "relearn-dark", "relearn-light"]
+  themeVariant = "relearn-dark"
   disableLandingPageButton = true
   showVisitedLinks = true
 
