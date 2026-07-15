@@ -64,4 +64,4 @@ Thamus looked at writing and saw only what it would take. He wasn't wrong about 
 
 So here is the whole ask. When you think about what's going right or wrong in your use of AI, consider whether you can play a new game with the system. Instead of gripping every step (kill the chicken, cut the chicken, cook the chicken, make the sauce), try treating it as a partner with access to a world's worth of knowledge, one that can make your favorite dish *if* you give a great explanation of the outcome you desire. Keep cooking sometimes, because the craft is worth keeping and atrophy is real. Keep walking, for the same reason. But stop auditing the tool for failures and start auditing what you're feeding it.
 
-There are positives and negatives to both sides. My mother, doing her crossword, was righter than she knew.
+There are positives and negatives to both sides. My mother, doing her crossword, was more correct than she knew.
