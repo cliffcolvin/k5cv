@@ -177,18 +177,22 @@ Look again at that skill. Its trigger is "at the end of any session." That is a 
 
 Putting it in a project instructions file doesn't fix this. That's still context. You're still asking nicely.
 
-The fix is to stop asking. Most of these tools have a lifecycle event that fires when the model tries to end its turn, and lets you refuse. In Claude Code it's a `Stop` hook: a script the harness runs, not something the model chooses to run. Return `{"decision": "block"}` and the turn does not end. The model doesn't get a vote.
+The fix is to stop asking. Most of these tools have a lifecycle event that fires when the model tries to end its turn, and lets you refuse. In Claude Code it's a `Stop` hook: a script the harness runs, not something the model chooses to run. Refuse to let the turn end, and the model doesn't get a vote.
+
+Which sounds easy, and my first version of it was wrong.
+
+Here's the thing that makes end-of-session work genuinely hard: **the stop event fires at the end of every turn, not at the end of the session.** Every time the model finishes a task or comes up for air to ask you something, that's a stop. There is no "the session is over now" event you can hang work on. The one that fires when a session truly ends fires too late to ask the model for anything.
+
+So my first hook fired on the first stop after the session had done real work. Which meant it reflected on a *half-finished session*, congratulated itself, marked itself done, and never looked at anything I did afterward. It wasn't too expensive. It was reflecting on the wrong session.
+
+The fix is to notice that "the session ended" and "no more turns are coming" are the same statement, and the second one is measurable. Wait. If another turn shows up, this wasn't the end, so shut up and let the next one worry about it. If nothing shows up, everybody went home, and now you have the whole session to look at.
+
+That's a debounce, and it's about eight lines:
 
 ```bash
 #!/usr/bin/env bash
-# Stop hook: prompt the reflection once per session, if the session
-# did enough real work to be worth reflecting on.
+# Stop hook: reflect ONCE, when the session has actually gone idle.
 input=$(cat)
-
-# Guard 1: don't loop. If we already nudged in this stop-chain, let it go.
-case "$input" in
-  *'"stop_hook_active":true'*) exit 0 ;;
-esac
 
 session_id=$(printf '%s' "$input" \
   | sed -n 's/.*"session_id"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')
@@ -196,20 +200,40 @@ transcript=$(printf '%s' "$input" \
   | sed -n 's/.*"transcript_path"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')
 [ -z "$session_id" ] && exit 0
 
-# Guard 2: at most once per session, not once per turn.
-marker="${TMPDIR:-/tmp}/reflect-$session_id"
-[ -f "$marker" ] && exit 0
+state="${TMPDIR:-/tmp}/reflect"; mkdir -p "$state" || exit 0
+done_marker="$state/$session_id.done"
+gen_file="$state/$session_id.gen"
 
-# Guard 3: only if we actually built something.
+# Guard 1: at most one reflection per session.
+[ -f "$done_marker" ] && exit 0
+
+# Guard 2: only sessions that actually built something.
 [ -f "$transcript" ] || exit 0
 edits=$(grep -o '"name":"\(Edit\|Write\)"' "$transcript" 2>/dev/null | wc -l)
 [ "${edits:-0}" -lt 4 ] && exit 0
 
-touch "$marker"
+# Guard 3: the debounce. Claim this turn, then wait.
+stamp="$(date +%s)-$$"
+printf '%s' "$stamp" > "$gen_file" || exit 0
+sleep "${IDLE_SECS:-300}"
 
-reason="Before finishing: run the skill-extraction reflection. Any repeatable pattern or costly gotcha from this session? If so, write it up with triggers, procedure, and gotchas. If not, say so in one line and finish. Nothing to extract is a valid answer."
-printf '{"decision":"block","reason":"%s"}' "$reason"
+# Somebody stopped after me, so my turn wasn't the end. Their problem now.
+[ "$(cat "$gen_file" 2>/dev/null)" = "$stamp" ] || exit 0
+
+# Still the newest stop after five quiet minutes. Everyone's gone home.
+touch "$done_marker"
+cat <<'MSG'
+The session has gone idle. Run the reflection over the WHOLE session, then
+finish. Any repeatable pattern or costly gotcha worth writing up with
+triggers, procedure, and gotchas? If nothing clears that bar, say so in one
+line and finish. "Nothing to extract" is a valid and common answer.
+MSG
+exit 2
 ```
+
+Every stop grabs a timestamp and goes to sleep. A newer stop overwrites it, so the older sleeper wakes up, sees it's been superseded, and quietly exits. Only the stop that's still the newest one after five quiet minutes concludes that the session is actually over. No turn counter, no bookkeeping, and it self-corrects if you come back from lunch and keep working.
+
+The `exit 2` is the interesting part. This hook runs in the background (`"async": true, "asyncRewake": true` in the config), which means it never makes you wait. You get your answer the instant it's ready. Five minutes later, once you've wandered off, the thing wakes back up and does the filing.
 
 Wire it up in `settings.json` and it runs whether anyone remembers it or not:
 
@@ -223,8 +247,10 @@ Wire it up in `settings.json` and it runs whether anyone remembers it or not:
             "type": "command",
             "command": "bash \"$HOME/.claude/hooks/reflect.sh\"",
             "shell": "bash",
-            "timeout": 15,
-            "statusMessage": "Checking for skills to extract…"
+            "async": true,
+            "asyncRewake": true,
+            "timeout": 900,
+            "statusMessage": "Arming reflection…"
           }
         ]
       }
@@ -233,9 +259,11 @@ Wire it up in `settings.json` and it runs whether anyone remembers it or not:
 }
 ```
 
-Each guard is there because of a specific way this goes wrong. Without the first, you get an infinite loop. Without the second you get nagged on every single turn, which is how a clever system becomes a system you rip out on day two. Without the third it fires on "what does this error mean," which trains you to ignore it.
+The `timeout` has to outlive the `sleep`, or the harness kills your patient little waiter before it ever wakes up.
 
-One honest limitation, since I'd rather you hear it from me than discover it: there is no true end-of-session event you can inject work into. The stop event fires at the end of every *turn*. So what you get isn't "reflect when we're done," it's "reflect once, at the first stopping point after real work has happened." Close enough to be useful, and worth knowing it isn't magic.
+Each guard is there because of a specific way this goes wrong, and I'd rather hand you the list than have you rediscover it. Without the first you reflect over and over on a session you already filed. Without the second it fires on "what does this error mean," which trains you to ignore it, which is worse than not having it. Without the third you're back to grading a half-finished session. And if you ever find yourself writing the naive version that just fires immediately, notice that you've built something that interrupts you at your busiest moment to ask what you've learned so far. The answer is "not yet, I'm working."
+
+Two honest limitations. The sleeping waiter only survives as long as the session process does, so if you slam the terminal shut, the reflection never happens. And the five minutes is a number I made up.
 
 But here's the part I keep chewing on. The hook cannot tell whether there's a lesson in the session. It has no idea. All it can do is guarantee the question gets *asked*, every time, whether or not anyone feels like asking it.
 
