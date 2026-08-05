@@ -2,6 +2,21 @@
 
 Running log of intent and decisions for the k5cv site. Newest first.
 
+## 2026-08-05 — Added the Faith category
+
+**Decision:** New category `content/posts/Faith/`, opened with "At Peace in the
+Storm" (Mark 4, written the day of a family member's surgery). Published live.
+
+**Why:** Cliff asked for it by name. It is the first explicitly religious writing
+on the site; the reflective essays that touch on his higher power have lived in
+`Random` until now, and this gives that material a home.
+
+**Consequences:** The post names two living relatives and one of their medical
+situations. That was raised with Cliff before publishing, including the point that
+the quoted relative answered a personal question rather than giving a quote for
+publication, and he chose to publish as written. Noting it here because the
+`k5cv-family-audience` rule would otherwise read as though the case was missed.
+
 ## 2026-08-05 — Edited live posts for a family audience
 
 **Decision:** Made targeted edits to four posts ahead of Cliff sharing the site
