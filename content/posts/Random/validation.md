@@ -12,7 +12,7 @@ Did I enjoy reading what I wrote? Did I enjoy writing it?
 
 That's it. That's the whole rubric now.
 
-I've shared some pieces with my wife for feedback, but I know with absolute certainty that I'm not writing these things for her enjoyment. She'd never willfully pick up essays on the topics I'm exploring. And that's fine. Because for the first time, I'm doing something without seeking validation, valuation, or some form of transactional gain.
+I've shared some pieces with my wife for feedback, and she's been generous with it. But I know with absolute certainty that I'm not writing these things to be enjoyed. They aren't anyone's idea of light reading, mine included. And that's fine. Because for the first time, I'm doing something without seeking validation, valuation, or some form of transactional gain.
 
 It feels strange. Almost disorienting. But also like the beginning of something true.
 
@@ -24,13 +24,13 @@ But here's the thing: it's still zero-sum. Someone wins. Someone loses. The stak
 
 This framework bleeds into everything. Maybe you don't consciously try to "beat" someone for a job or a project. But I've spent most of my life seeking validation from others. The "attaboy." The profound feeling of being noticed.
 
-My therapist recently asked me to name times I've been deeply proud of myself. I struggled. Not because I haven't accomplished things - I have, some pretty remarkable things - but because I wasn't doing them for me. I was doing them to be seen.
+I was recently asked to name times I've been deeply proud of myself. I struggled. Not because I haven't accomplished things - I have, some pretty remarkable things - but because I wasn't doing them for me. I was doing them to be seen.
 
 ## The Identity Problem
 
 Here's what scares me: How many college athletes finish their careers and immediately face an identity crisis?
 
-Would I, when I retire? Or worse, if I got laid off tomorrow?
+Would I, when I retire? Or if the work simply went away tomorrow?
 
 I've seen those posts on Reddit. People devastated after losing their jobs. Sure, the initial fear is practical - how do I pay the mortgage? - but beneath the surface is something deeper. Their identity was tied to what they did. You can see the cracks, especially in people who've been laid off multiple times. The facade starts to crumble.
 

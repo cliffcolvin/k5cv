@@ -8,7 +8,7 @@ I want to share something I've been reflecting on lately about how we attach our
 
 ## Taking Complete Responsibility
 
-In *The 15 Commitments of Conscious Leadership*, you learn to take complete responsibility. I didn't originally understand what that meant. It's easy to say "I'll take complete responsibility for X"—meaning the outcome of a goal, for example—and then still attack that goal in an unconscious way.
+In *The 15 Commitments of Conscious Leadership*, you learn to take complete responsibility. I didn't originally understand what that meant. It's easy to say "I'll take complete responsibility for X" (meaning the outcome of a goal, for example) and then still attack that goal in an unconscious way.
 
 In this macro-level thinking about responsibility, I'm trying to frame my responsibility for my feelings, my joy, and my internal value of self and success as completely within my control, regardless of the outcomes of any specific day.
 
@@ -26,7 +26,7 @@ I've said for years, "It will be a great day if you make it a great day." This s
 
 I do have to say that I'm still really bad at this. It is so hard to be successful at this way of operating every day. And yet, it has become my unyielding goal in life. I believe that this level of consciousness will lead me to great things, and honestly, I think it puts me in a much closer, connective relationship with my higher power.
 
-When you read all of this, you may roll your eyes or think it sounds hokey. It probably does. I invite you to consider a world where this set of thoughts is just as true, or truer than the preconceived notions you are basing your life outlook on. Maybe try it. Don't take my word for it—go read *The 15 Commitments*, and see if it can help change you for the better!
+When you read all of this, you may roll your eyes or think it sounds hokey. It probably does. I invite you to consider a world where this set of thoughts is just as true, or truer than the preconceived notions you are basing your life outlook on. Maybe try it. Don't take my word for it; go read *The 15 Commitments*, and see if it can help change you for the better!
 
 73,
 Cliff
