@@ -2,6 +2,7 @@
 title = 'At Peace'
 date = 2026-08-05
 draft = false
+aliases = ['/posts/faith/at-peace-in-the-storm/']
 +++
 
 Today my wife's aunt Julie is having brain surgery. It's the kind of procedure where you spend the whole day checking your phone, where the waiting room becomes its own strange kind of sacred space, and where every hour that passes without news feels heavier than the one before it.
@@ -48,10 +49,10 @@ I suspect most of us are in a storm of one kind or another today. Maybe you're w
 
 The invitation is the same one Jesus gave that night: to remember who's in the boat with you. He doesn't promise that the waves will go flat exactly when and how we want them to. What he offers is a peace that was never dependent on the weather in the first place, and it can be ours for the same reason it was his, if we're willing to loosen our grip and reach for it.
 
+So my prayer, for Julie, for Jim, for you, and for me, is that when the question comes around to us, we have the answer ready.
+
 Jesus, to a sea that would not settle: *Siōpa, pephimōso.*
 
-Jim, this morning, asked how he was doing: *At peace.*
-
-My prayer, for Julie, for Jim, for you, and for me, is that when the storm rolls into our own lives and someone asks us that same ordinary question, we can give that same answer. Even here. Even now.
+Jim, to an ordinary question on a hard morning: *At peace.*
 
 *"Even the wind and the waves obey him." (Mark 4:41)*
