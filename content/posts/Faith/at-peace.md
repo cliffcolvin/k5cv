@@ -59,4 +59,6 @@ Jesus, to a sea that would not settle: *Siōpa, pephimōso.*
 
 Jim, to an ordinary question on a hard morning: *At peace.*
 
+Be like Jim. Put your faith in the one who can still a sea and who holds the part of your future you cannot see. It will carry you further than worry and fear were ever going to.
+
 *"Even the wind and the waves obey him." (Mark 4:41)*
