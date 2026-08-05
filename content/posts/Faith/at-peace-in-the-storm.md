@@ -24,7 +24,7 @@ But look at the juxtaposition sitting right there in that boat. The disciples' q
 
 Notice the order, too. Jesus doesn't calm the storm and then become peaceful. He's asleep on a cushion first, at rest before he's done a single thing about the wind or the waves. The disciples' whole framework runs the opposite direction: fix the storm, then we'll feel settled. Jesus shows it can work in reverse. The peace isn't waiting on the outcome to arrive. It's already there, holding steady, before the outcome is even decided.
 
-He gets up and answers the storm with two words ("Quiet! Be still!"), and the sea goes flat. Then he turns to his friends and asks a question of his own: "Why are you so afraid? Do you still have no faith?" (Mark 4:40).
+He gets up and answers the storm with two words, and the sea goes flat. English needs three to carry them ("Quiet! Be still!"), but in Greek it's just *siōpa, pephimōso*: hush, and be muzzled. That second word is the one you'd use for muzzling an ox, and it sits in a tense that means not merely *be still* but *be still and stay that way*. Then he turns to his friends and asks a question of his own: "Why are you so afraid? Do you still have no faith?" (Mark 4:40).
 
 ## Peace Isn't the Absence of the Storm
 
