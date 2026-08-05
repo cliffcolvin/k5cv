@@ -1,5 +1,5 @@
 +++
-title = 'At Peace in the Storm'
+title = 'At Peace'
 date = 2026-08-05
 draft = false
 +++
@@ -24,7 +24,7 @@ But look at the juxtaposition sitting right there in that boat. The disciples' q
 
 Notice the order, too. Jesus doesn't calm the storm and then become peaceful. He's asleep on a cushion first, at rest before he's done a single thing about the wind or the waves. The disciples' whole framework runs the opposite direction: fix the storm, then we'll feel settled. Jesus shows it can work in reverse. The peace isn't waiting on the outcome to arrive. It's already there, holding steady, before the outcome is even decided.
 
-He gets up and answers the storm with two words, and the sea goes flat. English needs three to carry them ("Quiet! Be still!"), but in Greek it's just *siōpa, pephimōso*: hush, and be muzzled. That second word is the one you'd use for muzzling an ox, and it sits in a tense that means not merely *be still* but *be still and stay that way*. Then he turns to his friends and asks a question of his own: "Why are you so afraid? Do you still have no faith?" (Mark 4:40).
+He gets up and answers the storm, and the sea goes flat. English needs three words to carry what he said ("Quiet! Be still!"), but the Greek is just *siōpa, pephimōso*: hush, and be muzzled. That second word is the one you'd use for muzzling an ox, and it sits in a tense that means not merely *be still* but *be still and stay that way*. Then he turns to his friends and asks a question of his own: "Why are you so afraid? Do you still have no faith?" (Mark 4:40).
 
 ## Peace Isn't the Absence of the Storm
 
@@ -48,6 +48,10 @@ I suspect most of us are in a storm of one kind or another today. Maybe you're w
 
 The invitation is the same one Jesus gave that night: to remember who's in the boat with you. He doesn't promise that the waves will go flat exactly when and how we want them to. What he offers is a peace that was never dependent on the weather in the first place, and it can be ours for the same reason it was his, if we're willing to loosen our grip and reach for it.
 
-This morning we asked Jim how he was doing, and he gave us his answer in two words. It's worth remembering that two words were all Jesus needed to quiet the sea. My prayer, for Julie, for Jim, for you, and for me, is that when the storm rolls into our own lives and someone asks us that same ordinary question, we can give the same answer: that we are at peace, even here, even now.
+Jesus, to a sea that would not settle: *Siōpa, pephimōso.*
+
+Jim, this morning, asked how he was doing: *At peace.*
+
+My prayer, for Julie, for Jim, for you, and for me, is that when the storm rolls into our own lives and someone asks us that same ordinary question, we can give that same answer. Even here. Even now.
 
 *"Even the wind and the waves obey him." (Mark 4:41)*
