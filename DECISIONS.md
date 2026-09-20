@@ -2,6 +2,23 @@
 
 Running log of intent and decisions for the k5cv site. Newest first.
 
+## 2026-09-20 — Pulled "Who Signs for the Machine?" back to draft
+
+**Decision:** `content/posts/AI-ML/who-signs-for-the-machine.md` set to
+`draft = true` one day after publishing, on Cliff's instruction. The file stays
+in the repo unchanged otherwise, ready for revision.
+
+**Consequence handled:** the live responsibility-gap post carried a parenthetical
+link to the CPCO post (a sentence added during conversion, not part of Cliff's
+paper). Removed it so the live post does not point at a 404. Restore the
+sentence when the CPCO post republishes. The CPCO post's own link to the
+responsibility-gap post is untouched; it only matters once that post is live
+again.
+
+**Consequences not handled:** the URL was live for about a day. Search engines
+and RSS readers may hold a cached copy until they recrawl; nothing on the site
+side can shorten that.
+
 ## 2026-09-19 — Added "The Responsibility Gap in Enterprise AI" as a draft
 
 **Decision:** New post `content/posts/AI-ML/the-responsibility-gap-in-enterprise-ai.md`,
@@ -44,8 +61,17 @@ for "FinOps decisions are management decisions."
 **Consequences:** Both posts pass a grep for internal names, products, customers,
 and meeting content; the only "IBM" occurrences are the 1979 quote and its two
 follow-on sentences. Not build-verified locally (no Hugo). Both posts carry the
-same date; if Cliff wants them to land in a particular order on the homepage, he
-should stagger the dates.
+same date.
+
+**Published 2026-09-19 (later the same morning), on Cliff's instruction:** both
+posts flipped to `draft = false`, cross-links changed from site-relative paths to
+absolute `https://k5cv.com/posts/ai-ml/...` URLs, and the CPCO post's closing
+softened from "I'd love to be shown someone who's further along" (read as a
+challenge) to an invitation for feedback in Cliff's words. Commits `b7129c3` and
+`e5f53d7`, pushed to `main`. The push had to go over SSH
+(`git@github.com:cliffcolvin/k5cv.git`): `origin` is HTTPS and the `gh` keyring
+token is invalid, so `git push origin main` fails until `gh auth refresh` or the
+remote is switched to SSH. Remote left as-is.
 
 ## 2026-09-19 — Added "Who Signs for the Machine?" as a draft
 

@@ -165,7 +165,7 @@ This framing changes the questions leaders should ask before expanding autonomou
 
 If those questions have no answer, a higher autonomy setting does not remove work. It moves work and makes the risk harder to see.
 
-It also changes what I think FinOps for AI can become. A financial ledger is essential: cost is one of the consequences an agent creates, and it is often among the first an organization can measure. But the ledger can be more than an informer. It can become the economic layer of a larger responsibility spine: one that connects what the system cost to what it attempted, what changed, what happened, whether it recovered, and whether the outcome endured. (The measurement half of that spine, cost per correct outcome, gets its own post: [Who Signs for the Machine?](https://k5cv.com/posts/ai-ml/who-signs-for-the-machine/))
+It also changes what I think FinOps for AI can become. A financial ledger is essential: cost is one of the consequences an agent creates, and it is often among the first an organization can measure. But the ledger can be more than an informer. It can become the economic layer of a larger responsibility spine: one that connects what the system cost to what it attempted, what changed, what happened, whether it recovered, and whether the outcome endured.
 
 The systems that earn trust will not be the ones that never fail. They will be the ones that can see what changed, recognize when context or criteria require human judgment, bring that person the relevant evidence, preserve what the judgment changed, and stay with the result long enough to recover and learn.
 

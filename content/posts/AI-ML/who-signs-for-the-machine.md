@@ -1,7 +1,7 @@
 +++
 title = 'Who Signs for the Machine?'
 date = 2026-09-19
-draft = false
+draft = true
 +++
 
 *On tokenomics, cost per successful (and correct) outcome, and the responsibility gap*
