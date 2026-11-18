@@ -2,6 +2,40 @@
 
 Running log of intent and decisions for the k5cv site. Newest first.
 
+## 2026-11-17 — Removed all non-AI posts and their categories
+
+**Decision:** On Cliff's instruction, deleted every post outside `AI-ML/`, the
+four categories that held them (each `_index.md` included), and the one image
+only those posts used. Removed:
+
+- `content/posts/Faith/at-peace.md`
+- `content/posts/Fantasy-and-TTRPG/kormak.md`
+- `content/posts/Life/2025-year-in-review.md`
+- `content/posts/Random/back-and-updates.md`
+- `content/posts/Random/conscious-living-and-joy.md`
+- `content/posts/Random/validation.md`
+- `static/kormak.png`
+
+**Why:** The blog is now AI writing only.
+
+**Classification:** by category folder, then checked by content. No removed post
+discusses AI; all four `AI-ML/` posts stay, including the drafted "Who Signs for
+the Machine?".
+
+**Consequences:**
+
+- Homepage post table and category listing show only AI/ML. `Ham/` remains as
+  the pre-existing empty category, untouched.
+- Verified before deleting: no remaining content links to the removed posts,
+  and `kormak.png` was referenced only by `kormak.md`. The `at-peace` alias
+  `/posts/faith/at-peace-in-the-storm/` goes away with the post.
+- The `static/` ham-radio and project images were already unreferenced before
+  this change; left alone.
+- Not build-verified locally; Hugo isn't installed on this machine. CI builds
+  from source on push.
+- Removed posts stay in git history and may persist in search-engine caches and
+  archive.org.
+
 ## 2026-09-20 — Pulled "Who Signs for the Machine?" back to draft
 
 **Decision:** `content/posts/AI-ML/who-signs-for-the-machine.md` set to
